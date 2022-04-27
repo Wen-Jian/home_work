@@ -1,0 +1,29 @@
+@domain = http://localhost:5000/api/v1
+### create tasks
+post {{domain}}/task HTTP/1.1;
+content-type: application/json
+
+{
+    "name": "ttuuiit" 
+}
+
+### get all tasks
+get {{domain}}/tasks HTTP/1.1
+content-type: application/json
+
+{}
+
+### update data
+put {{domain}}/task/2 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "做蘿蔔糕",
+    "status": true
+}
+
+### delete data
+delete {{domain}}/task/2 HTTP/1.1
+content-type: application/json
+
+{}

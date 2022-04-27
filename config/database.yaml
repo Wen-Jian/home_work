@@ -1,0 +1,8 @@
+development:
+  db_url: mysql+pymysql://root:dead7903@localhost:3306/gogolook
+
+production:
+  db_url: mysql+pymysql://root:dead7903@localhost:3306/gogolook
+
+test:
+  db_url: mysql+pymysql://root:dead7903@localhost:3306/gogolook_test
